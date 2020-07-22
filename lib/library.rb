@@ -16,4 +16,15 @@ class Library
     end
   end
 
+  def publication_time_frame_for(author)
+    year_array = []
+    author.books.each do |book|
+      year_array << book.publication_year
+    end
+    timeframe = {}
+    timeframe[:start] = year_array.sort.first
+    timeframe[:end] = year_array.sort.last
+    timeframe
+  end
+
 end
