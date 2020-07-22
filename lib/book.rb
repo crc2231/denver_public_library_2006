@@ -16,6 +16,4 @@ class Book
     @publication_date.split(/, /).last
   end
 
-
-
 end

@@ -53,5 +53,4 @@ class Library
     most_popular.last[0]
   end
 
-
 end
